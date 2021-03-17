@@ -1,0 +1,14 @@
+# place this file into ~/.ssh/config
+# comment the host that you are not currently using
+# chmod 600 ~/.ssh/config
+Host github.com
+    Hostname github.com
+    Port 22
+    User krautz
+    IdentityFile ~/.ssh/id_rsa_hotmail
+
+Host github.com-notusing
+    Hostname github.com
+    Port 22
+    User ckrauthamer
+    IdentityFile ~/.ssh/id_rsa_mediaocean
