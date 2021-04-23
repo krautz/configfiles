@@ -1,0 +1,11 @@
+"*":
+  editor:
+    defaultFontSize: 22
+    fontSize: 22
+    preferredLineLength: 100
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+    tabType: "soft"
