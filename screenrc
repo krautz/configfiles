@@ -5,6 +5,6 @@ caption always '%{= .g} %H |%=%{K}%{= w}%?%{K}%-Lw%?%{r}(%{W}%{w}%n%{w}*%f%t%?(%
 
 term screen-256color
 
-bindkey -k k1 next
-bindkey -k k2 prev
+bindkey -k k1 prev
+bindkey -k k2 next
 bindkey -k k3 screen
