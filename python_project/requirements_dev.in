@@ -1,0 +1,13 @@
+#
+# Add dependencies here and run `pip-compile requirements_dev.in -o requirements_dev.out` to generate requirements_dev.txt file
+#
+Django
+mysqlclient  # for MariaDB
+
+#
+# Dev dependencies
+#
+pre-commit
+black
+isort
+pylint

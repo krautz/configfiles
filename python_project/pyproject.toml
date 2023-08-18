@@ -1,0 +1,15 @@
+[tool.isort]
+profile = "black"
+line_length = 100
+skip = ["env"] 
+
+[tool.black]
+target-version = ["py38"]
+line-length = 100
+exclude = "(env)"
+
+[tool.pylint.messages_control]
+disable = [
+  "missing-module-docstring",
+]
+ 

@@ -5,3 +5,4 @@ Repo to store configuration files such as:
  - .eslintignore
  - .gitconfig
  - tsconfig.json
+ - python project basics (requirements file, linters, pre-commit)
