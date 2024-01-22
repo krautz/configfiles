@@ -6,3 +6,5 @@ Repo to store configuration files such as:
  - .gitconfig
  - tsconfig.json
  - python project basics (requirements file, linters, pre-commit)
+ - atom
+ - VSCode (Source: exported using vscode)
