@@ -1,4 +1,4 @@
-# Python Project Skeleton
+# Python Project Setup
 In this folder you will find a bunch of configuration files for a new python project.
 
 If you copy any file, make sure to go through them and ensure that any mentioned version matches the project version.

@@ -14,3 +14,9 @@ Stores configuration for coding IDEs:
 
  - VSCode
  - Atom
+
+## Languages
+Stores project setup files and framework setup files
+
+ - Python
+   - Project Setup
