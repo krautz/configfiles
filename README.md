@@ -1,10 +1,8 @@
 # Configuration Files
-Repo to store configuration files such as:
- - babel.config.js
- - .eslint.json
- - .eslintignore
- - .gitconfig
- - tsconfig.json
- - python project basics (requirements file, linters, pre-commit)
- - atom
- - VSCode (Source: exported using vscode)
+Repo to store configuration files for IDEs, Applications, Frameworks and Languages.
+
+## IDE
+Stores configuration for coding IDEs:
+
+ - VSCode
+ - Atom
