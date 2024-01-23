@@ -1,15 +1,12 @@
-[tool.isort]
-profile = "black"
-line_length = 100
-skip = ["env"] 
-
 [tool.black]
-target-version = ["py38"]
-line-length = 100
-exclude = "(env)"
+line-length = 120
+target-version = ['py310']
+force-exclude = 'env|venv|alembic/versions/'
 
-[tool.pylint.messages_control]
-disable = [
-  "missing-module-docstring",
-]
- 
+[tool.ruff]
+line-length = 120
+# E501 (line-length) -> check by black already
+ignore = ["E501"]
+extend-select = ["I001"]
+target-version = "py310"
+extend-exclude = ["env", "*/versions/"]

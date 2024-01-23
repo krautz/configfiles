@@ -1,5 +1,7 @@
 #
-# Add dependencies here and run `pip-compile requirements.in` to generate requirements.txt file
+# Add dependencies here and run pip-compile to generate .txt file
 #
-Django
-mysqlclient  # for mariaDB
+
+# dev
+pip-tools
+pre-commit

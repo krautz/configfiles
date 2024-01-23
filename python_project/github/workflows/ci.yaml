@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  ci:
+    name: Continuous Integration
+    runs-on: ubuntu-20.04
+    container: python:3.10.4-slim-buster
+    steps:
+      - name: Install System Dependencies
+        run: |
+          apt-get update
+          apt-get -y install git libpq-dev gcc
+          apt-get clean
+      - name: Configure Git
+        run: git config --global --add safe.directory "$(pwd)"
+      - uses: actions/checkout@v3
+        name: Checkout ${{ github.repository }}
+      - name: Check formatters
+        uses: pre-commit/action@v3.0.0
+        with:
+          extra_args: --all-files
+      - uses: actions/cache@v3
+        name: Cache python requirements
+        with:
+          path: /usr/local/lib/python3.10/site-packages
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Install Project Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade setuptools
+          python -m pip install -r requirements.txt
+      # Add step to run unit tests
