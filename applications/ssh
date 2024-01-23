@@ -1,13 +1,15 @@
 # place this file into ~/.ssh/config
-# comment the host that you are not currently using
+# change the host that you are not currently using to an invalid one (add trailing `-`)
+# also, change the `User` and `IdentityFile` (private ssh key) as per your needs
 # chmod 600 ~/.ssh/config
+
 Host github.com
     Hostname github.com
     Port 22
     User krautz
     IdentityFile ~/.ssh/id_rsa_hotmail
 
-Host github.com-notusing
+Host github.com-
     Hostname github.com
     Port 22
     User ckrauthamer
