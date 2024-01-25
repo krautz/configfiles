@@ -9,4 +9,8 @@ line-length = 120
 ignore = ["E501"]
 extend-select = ["I001"]
 target-version = "py310"
+# src is only needed if source code is not at the same level as pyproject.toml
+# when not provided, file discovery starts at the same level as pyproject.toml file
+# it is used to determine if an import is first-party or not
+# src = ["src"]
 extend-exclude = ["env", "*/versions/"]
