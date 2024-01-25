@@ -8,6 +8,9 @@ repos:
         exclude: 'venv|env|alembic/versions/'
       - id: trailing-whitespace
         exclude: 'venv|env|alembic/versions/'
+  # We keep black even if ruff checks for formatting because ruff doesn't auto fix those issues
+  # and black does
+  # Ruff docs: "As a project, Ruff is designed to be used alongside Black..."
   - repo: https://github.com/ambv/black
     rev: 23.3.0
     hooks:
