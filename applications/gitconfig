@@ -3,3 +3,20 @@
 	email = caio_k@hotmail.com
 [core]
 	editor = vim
+[commit]
+	verbose = true
+[diff]
+	context = 10
+    colorMoved = default
+    algorithm = histogram
+[merge]
+    conflictstyle = diff3
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    light = false
+    line-numbers = true
+    side-by-side = true
