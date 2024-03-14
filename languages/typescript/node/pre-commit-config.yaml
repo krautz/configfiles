@@ -1,0 +1,16 @@
+fail_fast: true
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: end-of-file-fixer
+        exclude: 'node_modules|build'
+      - id: trailing-whitespace
+        exclude: 'node_modules|build'
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v8.56.0
+    hooks:
+    - id: eslint
+      files: ^src/.*\.[jt]sx?$  # *.js, *.jsx, *.ts and *.tsx
+      types: [file]
