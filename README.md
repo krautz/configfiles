@@ -18,7 +18,7 @@ Stores configuration for coding IDEs:
 ## Languages
 Stores project setup files and framework setup files
 
- - Javascript
+ - Typescript
    - Framworks
      - Apollo
  - Python
